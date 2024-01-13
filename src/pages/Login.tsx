@@ -3,6 +3,7 @@ import "./Login.scss";
 
 import LoginImage from "../assets/login-image.jpeg";
 import TextInput from "../UX/common/TextInput";
+import ButtonComponent from "../UX/common/ButtonComponent";
 
 const Login = () => {
   return (
@@ -20,8 +21,17 @@ const Login = () => {
             <TextInput label="Password" width="16rem" />
           </div>
           <div className="login-btn">
-            <button>LOG IN</button>
+            <ButtonComponent width="16rem">LOG IN</ButtonComponent>
           </div>
+          <a href="https://www.google.com/" className="forgot-password">
+            Forgot your password?
+          </a>
+          <div className="sign-up-link-line">
+            Don't have an account?<a className="sign-up">Sign up</a>
+          </div>
+          <a href="https://www.google.com/" className="login-as-admin">
+            Login as an admin
+          </a>
         </div>
       </div>
     </div>

@@ -31,10 +31,51 @@
         font-weight: 900;
       }
       .login-btn {
+        margin-top: 1rem;
       }
       .input-box {
         margin-bottom: 1rem;
       }
+      .forgot-password {
+        color: #fff;
+        margin-top: 1rem;
+        text-decoration: none;
+        font-size: 0.9rem;
+      }
+
+      .sign-up-link-line {
+        color: #969696;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+
+        .sign-up {
+          margin-left: 0.5rem;
+          color: #fff;
+          cursor: pointer;
+        }
+      }
+      .login-as-admin {
+        color: #fff;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media (max-width: 842px) {
+    .left-side {
+      visibility: hidden;
+    }
+    .right-side {
+      flex: auto;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 431px) {
+    .right-side {
+      margin-bottom: 15rem;
     }
   }
 }
