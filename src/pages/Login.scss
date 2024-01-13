@@ -1,0 +1,40 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  overflow-y: hidden;
+
+  .left-side,
+  .right-side {
+    flex: 1;
+  }
+
+  .left-side {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    .form-body {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      .login-heading {
+        color: #fff;
+        font-weight: 900;
+      }
+      .login-btn {
+      }
+      .input-box {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
