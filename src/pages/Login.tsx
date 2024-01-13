@@ -13,7 +13,7 @@ const Login = () => {
       </div>
       <div className="right-side">
         <div className="form-body">
-          <h1 className="login-heading">Log In</h1>
+          <h1 className="login-heading">User Log In</h1>
           <div className="input-box">
             <TextInput label="Username" width="16rem" />
           </div>
