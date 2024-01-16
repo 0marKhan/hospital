@@ -4,8 +4,9 @@ import "./Login.scss";
 import LoginImage from "../assets/login-image.jpeg";
 import TextInput from "../UX/common/TextInput";
 import ButtonComponent from "../UX/common/ButtonComponent";
+import { Link } from "react-router-dom";
 
-const Login = () => {
+const LoginAdmin = () => {
   return (
     <div className="login-container">
       <div className="left-side">
@@ -13,7 +14,7 @@ const Login = () => {
       </div>
       <div className="right-side">
         <div className="form-body">
-          <h1 className="login-heading">User Log In</h1>
+          <h1 className="login-heading">Admin Log In</h1>
           <div className="input-box">
             <TextInput label="Username" width="16rem" />
           </div>
@@ -26,16 +27,13 @@ const Login = () => {
           <a href="https://www.google.com/" className="forgot-password">
             Forgot your password?
           </a>
-          <div className="sign-up-link-line">
-            Don't have an account?<a className="sign-up">Sign up</a>
-          </div>
-          <a href="https://www.google.com/" className="login-as-admin">
-            Login as an admin
-          </a>
+          <Link className="login-as-user" to="/">
+            Login as an user
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default LoginAdmin;
