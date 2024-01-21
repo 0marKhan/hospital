@@ -1,0 +1,9 @@
+.rbc-calendar .rbc-month-view .rbc-row .rbc-day-bg.rbc-off-range-bg {
+  color: #7a7a7a;
+}
+
+.appointment-heading {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}

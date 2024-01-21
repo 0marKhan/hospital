@@ -5,6 +5,7 @@ import parse from "date-fns/parse";
 import startOfWeek from "date-fns/startOfWeek";
 import getDay from "date-fns/getDay";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import "./Calender.css";
 
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -21,14 +22,15 @@ const localizer = dateFnsLocalizer({
 
 const MyCalendar = () => {
   return (
-    <div>
+    <>
+      <h1 className="appointment-heading">Make Appointment</h1>
       <Calendar
         localizer={localizer}
         startAccessor="start"
         endAccessor="end"
-        style={{ height: 500, margin: "50px" }}
+        style={{ height: 500, margin: "50px", color: "white" }}
       />
-    </div>
+    </>
   );
 };
 
