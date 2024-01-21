@@ -1,5 +1,13 @@
-.rbc-calendar .rbc-month-view .rbc-row .rbc-day-bg.rbc-off-range-bg {
-  color: #7a7a7a;
+.rbc-off-range-bg {
+  background: #646464;
+}
+
+.rbc-today {
+  background: #646464;
+}
+
+.rbc-day-bg:hover {
+  cursor: pointer;
 }
 
 .appointment-heading {
