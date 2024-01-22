@@ -6,8 +6,18 @@
   background: #646464;
 }
 
-.rbc-day-bg:hover {
+.rbc-day-bg:hover,
+.rbc-day-slot:hover {
   cursor: pointer;
+}
+
+.rbc-btn-group button {
+  color: #fff;
+}
+
+.rbc-toolbar button:active,
+.rbc-toolbar button.rbc-active {
+  background-color: #a5a5a5;
 }
 
 .appointment-heading {
