@@ -1,0 +1,56 @@
+.month-display {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  align-items: center;
+  color: #fff;
+}
+
+.table-container {
+  color: #fff;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 10px;
+
+  th,
+  td {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    cursor: default; // The cell itself should not show the pointer cursor
+    background-color: #2e2e2e;
+    border-radius: 5px;
+
+    span.date-number {
+      display: inline-flex; // Use flex to center content
+      align-items: center;
+      justify-content: center;
+      width: 30px; // Diameter of the clickable area
+      height: 30px;
+      cursor: pointer; // Only the span is clickable
+      border-radius: 50%; // Makes the span circular
+      background-color: transparent; // Initial background color
+      transition: background-color 0.3s;
+
+      // Change the background color on hover
+      &:hover {
+        background-color: #5d7388;
+      }
+
+      // Styles for the selected day
+      &.selected-day {
+        background-color: #1976d2;
+      }
+    }
+  }
+
+  // Additional styles for the current day, if necessary
+  .current-day {
+    font-weight: bold;
+    // Apply styles to the span.date-number if the current day should be styled differently
+    span.date-number {
+      // Styles for the current day
+    }
+  }
+}

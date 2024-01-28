@@ -1,0 +1,14 @@
+.home-container {
+  display: flex;
+
+  .calendar-container {
+    width: 50%;
+  }
+}
+
+@media (max-width: 380px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
