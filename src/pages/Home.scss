@@ -6,6 +6,18 @@
   }
 }
 
+.bottom-portion {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10rem;
+  .next-buttons {
+    margin: 1rem 7rem 0 0;
+  }
+  .proceed-info {
+    color: #fff;
+  }
+}
+
 @media (max-width: 440px) {
   .home-container {
     display: flex;

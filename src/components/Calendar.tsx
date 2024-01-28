@@ -3,7 +3,11 @@ import { HiOutlineArrowSmLeft, HiOutlineArrowSmRight } from "react-icons/hi";
 
 import "./Calendar.scss";
 
-const Calendar: React.FC = () => {
+interface CalendarProps {
+  onDateSelect: (date: Date) => void;
+}
+
+const Calendar: React.FC<CalendarProps> = ({ onDateSelect }) => {
   const currentDate = new Date();
   const startYear = currentDate.getFullYear();
   const endYear = startYear + 5;
@@ -40,7 +44,9 @@ const Calendar: React.FC = () => {
 
   // Function to handle date selection
   const handleDateClick = (day: number, month: number, year: number) => {
-    setSelectedDate(new Date(year, month, day));
+    const newDate = new Date(year, month, day);
+    setSelectedDate(newDate);
+    onDateSelect(newDate); // Use the callback here
   };
 
   const goToNextMonth = () => {

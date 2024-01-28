@@ -1,0 +1,28 @@
+.time-picker {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 0 5rem;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .row {
+    margin-right: 3rem;
+    cursor: pointer;
+    padding: 9px;
+    border-radius: 3rem;
+    box-sizing: border-box;
+
+    &:hover {
+      background-color: #5d7388;
+    }
+
+    &.selected {
+      background-color: #1976d2; // Color for selected time
+    }
+  }
+}

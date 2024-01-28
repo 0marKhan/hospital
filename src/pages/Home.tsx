@@ -1,19 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import Calendar from "../components/Calendar";
-
-import "./Home.scss";
 import TimePicker from "../components/TimePicker";
+import Button from "@mui/material/Button";
+import { Link, useNavigate } from "react-router-dom";
+import "./Home.scss";
 
-const Home = () => {
+const Home: React.FC = () => {
+  const [selectedDate, setSelectedDate] = useState<Date>(new Date());
+  const [selectedTime, setSelectedTime] = useState<string>("");
+
+  const navigate = useNavigate();
+  const handleNextClick = () => {
+    navigate("/make-appointment", {
+      state: { date: selectedDate, time: selectedTime },
+    });
+  };
+
   return (
-    <div className="home-container">
-      <div className="calendar-container">
-        <Calendar />
+    <>
+      <div className="home-container">
+        <div className="calendar-container">
+          <Calendar onDateSelect={setSelectedDate} />
+        </div>
+        <div className="time-picker">
+          <TimePicker onTimeSelect={setSelectedTime} />
+        </div>
       </div>
-      <div className="time-picker">
-        <TimePicker />
+      <div className="bottom-portion">
+        <h3 className="proceed-info">Select a date and time to proceed</h3>
+        <div className="next-buttons">
+          <Button variant="contained" onClick={handleNextClick}>
+            NEXT
+          </Button>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
