@@ -27,7 +27,9 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className="bottom-portion">
-        <h3 className="proceed-info">Select a date and time to proceed</h3>
+        <h3 className="proceed-info">
+          Select a date and time, then press NEXT to proceed
+        </h3>
         <div className="next-buttons">
           <Button variant="contained" onClick={handleNextClick}>
             NEXT
