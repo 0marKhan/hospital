@@ -130,7 +130,7 @@ const Calendar: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="month-display-container">
       <div className="month-display">
         <HiOutlineArrowSmLeft
           onClick={goToPrevMonth}

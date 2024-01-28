@@ -1,5 +1,6 @@
 .month-display {
   display: flex;
+
   justify-content: space-between;
   width: 100%;
   margin-bottom: 20px;
@@ -18,7 +19,7 @@
     text-align: center;
     padding: 10px;
     position: relative;
-    cursor: default; // The cell itself should not show the pointer cursor
+    cursor: default;
     background-color: #2e2e2e;
     border-radius: 5px;
 
@@ -49,8 +50,25 @@
   .current-day {
     font-weight: bold;
     // Apply styles to the span.date-number if the current day should be styled differently
-    span.date-number {
-      // Styles for the current day
+    // span.date-number {
+    //   // Styles for the current day
+    // }
+  }
+}
+
+@media (max-width: 440px) {
+  .month-display {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .table-container {
+    width: 100%;
+
+    th,
+    td {
+      padding: 6px;
     }
   }
 }
