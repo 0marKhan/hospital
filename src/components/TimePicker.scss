@@ -26,3 +26,33 @@
     }
   }
 }
+
+@media (max-width: 1242px) {
+  .time-picker {
+    margin: 2rem 0 0 3rem;
+  }
+}
+
+@media (max-width: 989px) {
+  .time-picker {
+    margin: 0;
+    margin: 2rem 0rem 0 0.5rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .time-picker {
+    padding: 0;
+    margin: 0;
+    margin-top: 0.5rem;
+    justify-content: center;
+
+    .row {
+      margin: 0.5rem;
+    }
+
+    .column {
+      gap: 1.5rem;
+    }
+  }
+}

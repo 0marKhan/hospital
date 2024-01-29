@@ -1,6 +1,5 @@
 .month-display {
   display: flex;
-
   justify-content: space-between;
   width: 100%;
   margin-bottom: 20px;
@@ -53,6 +52,14 @@
     // span.date-number {
     //   // Styles for the current day
     // }
+  }
+}
+
+@media (max-width: 989px) {
+  .month-display-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 

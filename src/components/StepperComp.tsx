@@ -5,12 +5,22 @@ import Step from "@mui/material/Step";
 import StepLabel from "@mui/material/StepLabel";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { useNavigate } from "react-router-dom";
 
 const steps = ["Date and Time", "Payment Information", "Confirm"];
 
-export default function HorizontalLinearStepper() {
-  const [activeStep, setActiveStep] = React.useState(0);
+interface StepperCompProps {
+  activeStep: number;
+  setActiveStep: React.Dispatch<React.SetStateAction<number>>;
+}
+
+const StepperComp: React.FC<StepperCompProps> = ({
+  activeStep,
+  setActiveStep,
+}) => {
   const [skipped, setSkipped] = React.useState(new Set<number>());
+
+  const navigate = useNavigate();
 
   // None of the steps are optional
   const isStepOptional = (step: number) => {
@@ -28,12 +38,35 @@ export default function HorizontalLinearStepper() {
       newSkipped.delete(activeStep);
     }
 
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+    setActiveStep((prevActiveStep) => {
+      const newActiveStep = prevActiveStep + 1;
+
+      // Navigate to different pages based on the step
+      if (newActiveStep === 1) {
+        navigate("/payment");
+      } else if (newActiveStep === 2) {
+        navigate("/confirmation");
+      }
+
+      return newActiveStep;
+    });
+
     setSkipped(newSkipped);
   };
 
   const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+    setActiveStep((prevActiveStep) => {
+      const newActiveStep = prevActiveStep - 1;
+
+      // Navigate to different pages based on the step
+      if (newActiveStep === 0) {
+        navigate("/make-appointment");
+      } else if (newActiveStep === 1) {
+        navigate("/payment");
+      }
+
+      return newActiveStep;
+    });
   };
 
   const handleSkip = () => {
@@ -69,6 +102,9 @@ export default function HorizontalLinearStepper() {
                     color: "white !important",
                     "&.Mui-completed": { color: "white !important" },
                     "&.Mui-active": { color: "white !important" },
+                    "@media (max-width:440px)": {
+                      fontSize: "0.75rem",
+                    },
                   },
                 }}
               >
@@ -113,4 +149,6 @@ export default function HorizontalLinearStepper() {
       )}
     </Box>
   );
-}
+};
+
+export default StepperComp;

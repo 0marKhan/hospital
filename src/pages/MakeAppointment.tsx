@@ -8,8 +8,13 @@ interface AppointmentState {
   time: string;
 }
 
-const MakeAppointment: React.FC = () => {
+interface MakeAppointmentProps {
+  setActiveStep: React.Dispatch<React.SetStateAction<number>>;
+}
+
+const MakeAppointment: React.FC<MakeAppointmentProps> = ({ setActiveStep }) => {
   const location = useLocation();
+  const activeStep = 0;
 
   // Using type assertion for state
   const state = location.state as AppointmentState;
@@ -26,12 +31,21 @@ const MakeAppointment: React.FC = () => {
 
   return (
     <div>
-      <div className="stepper-container">
-        <StepperComp />
+      <div className="user-info">
+        <p className="text-row">
+          <span className="text-label">Username:</span> Omar Khan
+        </p>
+        <p className="text-row">
+          <span className="text-label">Selected Date:</span> {formatDate(date)}
+        </p>
+        <p className="text-row">
+          <span className="text-label">Selected Time:</span> {time}
+        </p>
+        <p className="text-row">
+          <span className="text-label">Location:</span> Passport Office Rd,
+          Phase 5 Hayatabad, Peshawar, Khyber Pakhtunkhwa 25100, Pakistan
+        </p>
       </div>
-      <p>Username: Omar Khan</p>
-      <p>Selected Date: {formatDate(date)}</p>
-      <p>Selected Time: {time}</p>
     </div>
   );
 };
