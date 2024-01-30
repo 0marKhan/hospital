@@ -4,11 +4,12 @@ import "./App.css";
 import LoginUser from "./pages/LoginUser";
 import LoginAdmin from "./pages/LoginAdmin";
 import SignUp from "./pages/SignUp";
-import Home from "./pages/Home";
+import DateAndTimePage from "./pages/DateAndTimePage";
 import MakeAppointment from "./pages/MakeAppointment";
 import Payment from "./pages/Payment";
 import StepperCom from "./components/StepperComp";
 import Confirmation from "./pages/Confirmation";
+import Home from "./pages/Home";
 
 import { Route, Routes, useLocation } from "react-router-dom";
 
@@ -32,8 +33,9 @@ const AppointmentProcess: React.FC = () => {
         <Route path="/" element={<LoginUser />} />
         <Route path="/login-admin" element={<LoginAdmin />} />
         <Route path="/sign-up" element={<SignUp />} />
-        <Route path="/home" element={<Home />} />
+        <Route path="/date-and-time-page" element={<DateAndTimePage />} />
         <Route path="/confirmation" element={<Confirmation />} />
+        <Route path="/home" element={<Home />} />
         <Route
           path="/make-appointment"
           element={<MakeAppointment setActiveStep={setActiveStep} />}

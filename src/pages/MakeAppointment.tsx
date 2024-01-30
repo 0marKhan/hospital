@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import StepperComp from "../components/StepperComp";
+
 import "./MakeAppointment.scss";
 
 interface AppointmentState {

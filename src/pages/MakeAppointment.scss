@@ -4,11 +4,30 @@
 
 .user-info {
   margin: 4rem 0 0 18rem;
+  line-height: 1.7rem;
   .text-row {
     color: #fff;
 
     .text-label {
       color: #888888;
     }
+  }
+}
+
+@media (max-width: 1173px) {
+  .user-info {
+    margin: 4rem 6rem 0 10rem;
+  }
+}
+
+@media (max-width: 870px) {
+  .user-info {
+    margin: 4rem 4rem 0 4rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .user-info {
+    margin: 4rem 2rem 0 2rem;
   }
 }
