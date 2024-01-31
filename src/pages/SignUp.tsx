@@ -1,6 +1,7 @@
 import React from "react";
 import "./Login.scss";
 import { Link } from "react-router-dom";
+import HealReserve from "../assets/healreserve.png";
 
 import LoginImage from "../assets/login-image.jpeg";
 import TextInput from "../UX/common/TextInput";
@@ -14,7 +15,9 @@ const SignUp = () => {
       </div>
       <div className="right-side">
         <div className="form-body">
-          <h1 className="login-heading">User Sign Up</h1>
+          <div className="logo">
+            <img src={HealReserve} />
+          </div>
           <div className="input-box">
             <TextInput label="Username" width="16rem" />
           </div>
@@ -22,7 +25,7 @@ const SignUp = () => {
             <TextInput label="Password" width="16rem" />
           </div>
           <div className="login-btn">
-            <ButtonComponent width="16rem">SIGN IN</ButtonComponent>
+            <ButtonComponent width="16rem">SIGN UP</ButtonComponent>
           </div>
           <Link className="login-as-user" to="/">
             Login as an user

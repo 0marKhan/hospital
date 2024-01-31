@@ -21,6 +21,14 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 4rem;
+
+    .logo {
+      img {
+        width: 14rem;
+        margin-bottom: 3rem;
+      }
+    }
+
     .form-body {
       width: 80%;
       display: flex;

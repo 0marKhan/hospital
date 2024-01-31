@@ -4,6 +4,7 @@ import "./Login.scss";
 import LoginImage from "../assets/login-image.jpeg";
 import TextInput from "../UX/common/TextInput";
 import ButtonComponent from "../UX/common/ButtonComponent";
+import HealReserve from "../assets/healreserve.png";
 import { Link } from "react-router-dom";
 
 const LoginAdmin = () => {
@@ -14,7 +15,9 @@ const LoginAdmin = () => {
       </div>
       <div className="right-side">
         <div className="form-body">
-          <h1 className="login-heading">Admin Log In</h1>
+          <div className="logo">
+            <img src={HealReserve} />
+          </div>
           <div className="input-box">
             <TextInput label="Username" width="16rem" />
           </div>

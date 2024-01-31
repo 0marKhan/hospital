@@ -1,0 +1,38 @@
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.page-body {
+  .make-appointment-text {
+    margin-top: 4rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .appointment-instruction-body {
+    margin: 6rem 0 5rem 16rem;
+    .appointment-instruction-row {
+      margin-top: 5rem;
+      display: flex;
+      justify-content: start;
+      gap: 4rem;
+    }
+  }
+
+  .appointment-instruction-text {
+    color: #fff;
+    margin-top: 1.3rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 150px;
+  }
+}
