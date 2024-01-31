@@ -44,10 +44,10 @@
       a {
         text-decoration: none;
         color: #fff;
-        transition: color 0.2s ease-in-out;
+        transition: color 0.2s;
 
         &:hover {
-          color: #1976d2; // This will now correctly change the color on hover
+          font-weight: bolder;
           cursor: pointer;
         }
       }

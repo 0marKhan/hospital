@@ -1,0 +1,86 @@
+.about-container {
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+
+  .doctor-name {
+    padding-top: 5rem;
+    text-align: center;
+  }
+
+  .flex-body {
+    margin: 5rem 5rem;
+    display: flex;
+    .about-img {
+      img {
+        width: 35rem;
+      }
+    }
+
+    .about-text {
+      padding-left: 2rem;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+
+      .email {
+        .about-span {
+          margin-right: 5rem;
+        }
+      }
+
+      .department {
+        margin-bottom: 2rem;
+        .about-span {
+          margin-right: 1.5rem;
+        }
+      }
+
+      .qualifications {
+        display: flex;
+        margin: 0;
+        margin-bottom: 1rem;
+
+        ul {
+          line-height: 1.5rem;
+          margin-top: 0rem;
+
+          margin-left: -2rem;
+          text-align: start;
+          li {
+            margin-right: 2rem;
+          }
+        }
+      }
+
+      .about-span {
+        color: #686767;
+        font-weight: bolder;
+        margin-right: 1rem;
+        text-align: center;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .flex-body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    .flex-body {
+      margin: 5rem 2rem;
+      .about-img {
+        img {
+          width: 25rem;
+        }
+      }
+    }
+  }
+}

@@ -18,7 +18,7 @@ const DateAndTimePage: React.FC = () => {
 
   return (
     <>
-      <div style={{ margin: "1rem 1.5rem 0rem 0rem", textAlign: "end" }}>
+      <div className="back-link">
         <Link
           style={{
             color: "#fff",

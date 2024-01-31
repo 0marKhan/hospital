@@ -33,11 +33,11 @@
       .nav-link {
         color: #fff;
         text-decoration: none;
-        transition: color 0.2s ease-in-out;
+        transition: color 0.2s;
         &:hover {
           cursor: pointer;
+
           font-weight: bolder;
-          color: #1976d2;
         }
       }
     }
@@ -60,7 +60,7 @@
 
     .side-nav {
       visibility: visible;
-      display: flex; // Make sure it's not set to 'none'
+      display: flex;
       align-items: center;
       justify-content: flex-end;
       margin-right: 2rem;

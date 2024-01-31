@@ -8,6 +8,8 @@ import Typography from "@mui/material/Typography";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+import "./StepperComp.scss";
+
 const steps = ["Date and Time", "Payment Information", "Confirm"];
 
 interface StepperCompProps {
@@ -85,7 +87,7 @@ const StepperComp: React.FC<StepperCompProps> = ({
 
   return (
     <>
-      <div style={{ margin: "1rem 1.5rem 2rem 0rem", textAlign: "end" }}>
+      <div className="back-link">
         <Link
           style={{
             color: "#fff",

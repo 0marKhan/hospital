@@ -8,6 +8,8 @@ import { MdOutlinePayment } from "react-icons/md";
 import northwest from "../assets/northwest.jpg";
 import "./Home.scss";
 
+import About from "../sections/About";
+
 const Home = () => {
   return (
     <>
@@ -20,15 +22,15 @@ const Home = () => {
         <div className="appointment-instruction-body">
           <div className="appointment-instruction-row">
             <div className="appointment-instruction-img">
-              <FaCalendarAlt style={{ color: "#fff", fontSize: "4rem" }} />
+              <FaCalendarAlt className="appointment-img" />
             </div>
             <div className="appointment-instruction-text">
-              Pick an available date of your choice from the calendar
+              Pick an available date from the calendar
             </div>
           </div>
           <div className="appointment-instruction-row">
             <div className="appointment-instruction-img">
-              <FaClock style={{ color: "#fff", fontSize: "4rem" }} />
+              <FaClock className="appointment-img" />
             </div>
             <div className="appointment-instruction-text">
               Pick a time from the available dates, that suits you
@@ -36,7 +38,7 @@ const Home = () => {
           </div>
           <div className="appointment-instruction-row">
             <div className="appointment-instruction-img">
-              <MdOutlinePayment style={{ color: "#fff", fontSize: "4rem" }} />
+              <MdOutlinePayment className="appointment-img" />
             </div>
             <div className="appointment-instruction-text">
               Choose any of the payment options
@@ -44,6 +46,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <About />
     </>
   );
 };
