@@ -9,6 +9,17 @@
   top: 0;
   z-index: 100;
 
+  .nav-logo {
+    width: 40%;
+    margin-right: 8rem;
+    margin-left: 3rem;
+    display: flex;
+    justify-content: start;
+    img {
+      width: 10rem;
+    }
+  }
+
   .nav-list {
     width: 40%;
     display: flex;
@@ -20,14 +31,40 @@
 
     .nav-items {
       .nav-link {
-        cursor: pointer;
         color: #fff;
         text-decoration: none;
+        transition: color 0.2s ease-in-out;
+        &:hover {
+          cursor: pointer;
+          font-weight: bolder;
+          color: #1976d2;
+        }
       }
+    }
+  }
 
-      &:hover {
-        font-weight: bolder;
+  .side-nav {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1060px) {
+  .nav-container {
+    justify-content: space-between;
+
+    .nav-list {
+      .nav-items {
+        visibility: hidden;
       }
+    }
+
+    .side-nav {
+      visibility: visible;
+      display: flex; // Make sure it's not set to 'none'
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 2rem;
+      color: #fff;
     }
   }
 }

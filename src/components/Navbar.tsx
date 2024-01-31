@@ -1,10 +1,16 @@
+// Navbar.jsx
 import React from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
+import HealReserve from "../assets/healreserve.png";
+import SideNav from "./SideNav";
 
 const Navbar = () => {
   return (
     <nav className="nav-container">
+      <div className="nav-logo">
+        <img src={HealReserve} alt="Heal Reserve Logo" />
+      </div>
       <ul className="nav-list">
         <li className="nav-items">
           <Link to="/home" className="nav-link">
@@ -22,6 +28,9 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+      <div className="side-nav">
+        <SideNav />
+      </div>
     </nav>
   );
 };

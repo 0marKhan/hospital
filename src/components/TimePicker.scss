@@ -2,12 +2,14 @@
   color: #fff;
   display: flex;
   align-items: center;
+
   margin: 0rem 0 0 5rem;
 
   .column {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    align-items: center;
   }
 
   .row {
@@ -36,7 +38,7 @@
 @media (max-width: 989px) {
   .time-picker {
     margin: 0;
-    margin: 2rem 0rem 0 0.5rem;
+    margin: 2rem 0rem 0 2rem;
   }
 }
 
