@@ -14,75 +14,29 @@
     justify-content: center;
   }
 
-  .appointment-instruction-body {
-    margin-top: 5rem;
-    margin-bottom: 8rem;
-    .appointment-instruction-row {
-      margin: 5rem 14rem 0 14rem;
-      display: flex;
-      justify-content: start;
-      gap: 4rem;
-
-      .appointment-instruction-text {
-        color: #fff;
-        margin-top: 1.3rem;
-        font-size: 1.5rem;
-      }
-
-      .appointment-img {
-        color: #fff;
-        font-size: 4rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 1177px) {
-  .page-body {
+  .body-container {
+    display: flex;
+    justify-content: center;
     .appointment-instruction-body {
+      width: 50rem;
+      margin-top: 1rem;
+      margin-bottom: 8rem;
       .appointment-instruction-row {
+        margin: 5rem 0rem 0 0rem;
+        padding-left: 4rem;
+        display: flex;
+        justify-content: start;
+        gap: 4rem;
+
         .appointment-instruction-text {
           color: #fff;
           margin-top: 1.3rem;
-          font-size: 1.3rem;
+          font-size: 1.5rem;
         }
+
         .appointment-img {
           color: #fff;
-          font-size: 3rem;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 1018px) {
-  .page-body {
-    .appointment-instruction-body {
-      .appointment-instruction-row {
-        margin: 5rem 10rem 0 10rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 878px) {
-  .page-body {
-    .make-appointment-text {
-      font-size: 1.5rem;
-    }
-
-    .appointment-instruction-body {
-      .appointment-instruction-row {
-        margin: 5rem 8rem 0 8rem;
-        gap: 3rem;
-        .appointment-instruction-text {
-          color: #fff;
-          margin-top: 1.3rem;
-          font-size: 1.1rem;
-        }
-        .appointment-img {
-          color: #fff;
-          font-size: 2.5rem;
+          font-size: 4rem;
         }
       }
     }
@@ -90,17 +44,50 @@
 }
 
 @media (max-width: 768px) {
+  .page-body {
+    .make-appointment-text {
+      font-size: 1.5rem;
+    }
+    .body-container {
+      .appointment-instruction-body {
+        width: 40rem;
+        margin-top: 1rem;
+        margin-bottom: 8rem;
+        .appointment-instruction-row {
+          gap: 2rem;
+          .appointment-instruction-text {
+            color: #fff;
+            margin-top: 1.3rem;
+            font-size: 1.3rem;
+          }
+
+          .appointment-img {
+            color: #fff;
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
   .banner {
     height: 350px;
   }
 }
 
-@media (max-width: 712px) {
+@media (max-width: 612px) {
   .page-body {
-    .appointment-instruction-body {
-      .appointment-instruction-row {
-        margin: 5rem 6rem 0 6rem;
-        gap: 2rem;
+    .make-appointment-text {
+      margin-top: 4rem;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+    }
+
+    .body-container {
+      .appointment-instruction-body {
+        .appointment-instruction-row {
+          padding-left: 2rem;
+        }
       }
     }
   }
