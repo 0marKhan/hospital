@@ -95,19 +95,24 @@
 
 @media (max-width: 480px) {
   .page-body {
-    .appointment-instruction-body {
-      .appointment-instruction-row {
-        margin: 5rem 2rem 0 2rem;
-        gap: 2rem;
+    .body-container {
+      .appointment-instruction-body {
+        .appointment-instruction-row {
+          margin: 5rem 2rem 0 2rem;
+          padding: 0;
+          gap: 1rem;
 
-        .appointment-instruction-text {
-          color: #fff;
-          margin-top: 1.3rem;
-          font-size: 0.8rem;
-        }
-        .appointment-img {
-          color: #fff;
-          font-size: 2.2rem;
+          .appointment-instruction-text {
+            color: #fff;
+            margin-top: 1.3rem;
+            font-size: 1.2rem;
+          }
+          .appointment-img {
+            color: #fff;
+            font-size: 3rem;
+
+            padding-top: 1rem;
+          }
         }
       }
     }

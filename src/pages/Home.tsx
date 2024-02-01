@@ -35,7 +35,7 @@ const Home = () => {
                 <FaClock className="appointment-img" />
               </div>
               <div className="appointment-instruction-text">
-                Pick a time from the available dates, that suits you
+                Pick a time from the available dates that suits you
               </div>
             </div>
             <div className="appointment-instruction-row">

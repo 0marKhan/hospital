@@ -1,3 +1,13 @@
+.back-link-datepage {
+  margin: 1rem 1.5rem 0rem 0rem;
+  text-align: end;
+  transition: 0.3s;
+
+  &:hover {
+    font-weight: bolder;
+  }
+}
+
 .home-container {
   display: flex;
 
@@ -9,6 +19,7 @@
 .bottom-portion {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 3rem;
 
   .next-buttons {
     margin: 1rem 7rem 0 3rem;

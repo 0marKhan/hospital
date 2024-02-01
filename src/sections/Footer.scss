@@ -2,55 +2,115 @@
   position: relative;
   background-color: #1b1c1c;
   overflow: hidden;
-  display: flex;
   color: #fff;
-  justify-content: space-between;
 
-  .map-side {
-    padding: 3rem 0;
-    margin-right: 3rem;
+  .footer-bottom-msg {
+    text-align: center;
+    color: #828282;
+    padding: 1rem 0;
   }
 
-  .left-side {
+  .footer-content {
     display: flex;
-    padding-top: 3rem;
-    justify-content: space-evenly;
-    width: 50%;
-    margin-left: 8rem;
+    justify-content: space-between;
+    .map-side {
+      padding: 3rem 0;
+      margin-right: 3rem;
+    }
 
-    .col1,
-    .col2 {
-      position: relative;
-      padding-bottom: 5px; // Adjust if needed
-      width: 35%;
+    .left-side {
+      display: flex;
+      padding-top: 3rem;
+      justify-content: space-evenly;
+      width: 60%;
+      margin-left: 4rem;
 
-      .footer-heading {
-        font-weight: bolder;
-        margin-bottom: 3rem;
-      }
+      .col1,
+      .col2 {
+        position: relative;
+        padding-bottom: 5px; // Adjust if needed
+        width: 35%;
 
-      .northwest-info {
-        color: #828282;
-        font-size: 0.9rem;
-        line-height: 1.2rem;
-      }
+        .footer-heading {
+          font-weight: bolder;
+          margin-bottom: 3rem;
+        }
 
-      .footer-link {
-        margin-bottom: 1.5rem;
-        a {
-          text-decoration: none;
+        .northwest-info {
           color: #828282;
-          transition: 0.3s;
-          padding-bottom: 1rem;
+          font-size: 0.9rem;
+          line-height: 1.2rem;
+        }
 
-          &:hover {
-            color: #fff;
+        .footer-link {
+          margin-bottom: 1.5rem;
+          a {
+            text-decoration: none;
+            color: #828282;
+            transition: 0.3s;
+            padding-bottom: 1rem;
+
+            &:hover {
+              color: #fff;
+            }
+          }
+
+          .MuiDivider-root {
+            margin-top: 0.5rem;
           }
         }
+      }
+    }
+  }
+}
 
-        .MuiDivider-root {
-          margin-top: 0.5rem;
+@media (max-width: 1046px) {
+  .footer-container {
+    .footer-content {
+      align-items: center;
+
+      .left-side {
+        flex-direction: column;
+
+        .col1,
+        .col2 {
+          width: 90%;
         }
+
+        .col2 {
+          margin-top: 4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .footer-container {
+    .footer-content {
+      flex-direction: column;
+      align-items: start;
+
+      .map-side {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+      }
+
+      .left-side {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    .footer-content {
+      .left-side {
+        margin: 0;
+        margin: 0 2rem 0 2rem;
+        width: 90%;
       }
     }
   }

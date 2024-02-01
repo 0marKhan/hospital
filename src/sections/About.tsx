@@ -6,6 +6,7 @@ const About = () => {
   return (
     <div className="about-container">
       <h1 className="doctor-name">Dr Kamran Amir Khan</h1>
+      <h2 className="doctor-subheading">Consultant Internist</h2>
       <div className="flex-body">
         <div className="about-img">
           <img src={Doctor} />
