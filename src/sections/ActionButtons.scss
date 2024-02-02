@@ -1,0 +1,24 @@
+.action-container {
+  margin: 5rem 0;
+  .action-body {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .action-container {
+    .action-body {
+      gap: 5rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .action-container {
+    .action-body {
+      flex-direction: column;
+    }
+  }
+}

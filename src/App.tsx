@@ -10,6 +10,7 @@ import Payment from "./pages/Payment";
 import StepperCom from "./components/StepperComp";
 import Confirmation from "./pages/Confirmation";
 import Home from "./pages/Home";
+import AdminHome from "./pages/adminPages/AdminHome";
 
 import { Route, Routes, useLocation } from "react-router-dom";
 
@@ -35,6 +36,7 @@ const AppointmentProcess: React.FC = () => {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/date-and-time-page" element={<DateAndTimePage />} />
         <Route path="/confirmation" element={<Confirmation />} />
+        <Route path="/admin-home" element={<AdminHome />} />
         <Route path="/home" element={<Home />} />
         <Route
           path="/make-appointment"

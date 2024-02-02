@@ -24,9 +24,11 @@ const LoginAdmin = () => {
           <div className="input-box">
             <TextInput label="Password" width="16rem" />
           </div>
-          <div className="login-btn">
-            <ButtonComponent width="16rem">LOG IN</ButtonComponent>
-          </div>
+          <Link to="/admin-home">
+            <div className="login-btn">
+              <ButtonComponent width="16rem">LOG IN</ButtonComponent>
+            </div>
+          </Link>
           <a href="https://www.google.com/" className="forgot-password">
             Forgot your password?
           </a>

@@ -10,6 +10,7 @@ import About from "../sections/About";
 import northwest from "../assets/northwest.jpg";
 import "./Home.scss";
 import Footer from "../sections/Footer";
+import ActionButtons from "../sections/ActionButtons";
 
 const Home = () => {
   return (
@@ -50,6 +51,7 @@ const Home = () => {
         </div>
       </div>
       <About />
+      <ActionButtons />
       <Footer />
     </>
   );
