@@ -44,3 +44,13 @@
     }
   }
 }
+
+@media (max-width: 440px) {
+  .card-body {
+    .card-text-section {
+      .card-text {
+        width: 75%;
+      }
+    }
+  }
+}

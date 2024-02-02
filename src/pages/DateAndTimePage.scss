@@ -1,14 +1,5 @@
-.back-link-datepage {
-  margin: 1rem 1.5rem 0rem 0rem;
-  text-align: end;
-  transition: 0.3s;
-
-  &:hover {
-    font-weight: bolder;
-  }
-}
-
 .home-container {
+  margin-top: 5rem;
   display: flex;
 
   .calendar-container {
@@ -47,13 +38,15 @@
 
 @media (max-width: 989px) {
   .home-container {
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
 
     .calendar-container {
+      margin-top: 3rem;
       width: 100%;
     }
   }
@@ -77,6 +70,7 @@
 
 @media (max-width: 440px) {
   .home-container {
+    margin-top: 5rem;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;

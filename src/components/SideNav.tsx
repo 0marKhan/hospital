@@ -54,7 +54,10 @@ const SideNav: React.FC = () => {
               <Link to="/date-and-time-page">Make Appointements</Link>
             </div>
             <div className="sidenav-links">
-              <Link to="/home">Logout</Link>
+              <Link to="/home">Home</Link>
+            </div>
+            <div className="sidenav-links">
+              <Link to="/">Logout</Link>
             </div>
           </div>
         )}

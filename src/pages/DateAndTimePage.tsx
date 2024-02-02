@@ -4,6 +4,7 @@ import TimePicker from "../components/TimePicker";
 import Button from "@mui/material/Button";
 import { Link, useNavigate } from "react-router-dom";
 import "./DateAndTimePage.scss";
+import Navbar from "../components/Navbar";
 
 const DateAndTimePage: React.FC = () => {
   const [selectedDate, setSelectedDate] = useState<Date>(new Date());
@@ -18,17 +19,7 @@ const DateAndTimePage: React.FC = () => {
 
   return (
     <>
-      <div className="back-link-datepage">
-        <Link
-          style={{
-            color: "#fff",
-            textDecoration: "none",
-          }}
-          to="/home"
-        >
-          Home
-        </Link>
-      </div>
+      <Navbar />
       <div className="home-container">
         <div className="calendar-container">
           <Calendar onDateSelect={setSelectedDate} />

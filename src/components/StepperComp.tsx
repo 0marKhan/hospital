@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import "./StepperComp.scss";
+import Navbar from "./Navbar";
 
 const steps = ["Date and Time", "Payment Information", "Confirm"];
 
@@ -87,18 +88,8 @@ const StepperComp: React.FC<StepperCompProps> = ({
 
   return (
     <>
-      <div className="back-link">
-        <Link
-          style={{
-            color: "#fff",
-            textDecoration: "none",
-          }}
-          to="/date-and-time-page"
-        >
-          Previous Page
-        </Link>
-      </div>
-      <Box sx={{ width: "100%", color: "white" }}>
+      <Navbar />
+      <Box sx={{ width: "100%", color: "white", marginTop: "8rem" }}>
         <Stepper activeStep={activeStep}>
           {steps.map((label, index) => {
             const stepProps: { completed?: boolean } = {};

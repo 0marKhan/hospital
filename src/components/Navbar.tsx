@@ -9,7 +9,9 @@ const Navbar = () => {
   return (
     <nav className="nav-container">
       <div className="nav-logo">
-        <img src={HealReserve} alt="Heal Reserve Logo" />
+        <Link to="/home">
+          <img src={HealReserve} alt="Heal Reserve Logo" />
+        </Link>
       </div>
       <ul className="nav-list">
         <li className="nav-items">
