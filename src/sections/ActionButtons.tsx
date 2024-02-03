@@ -20,7 +20,7 @@ const ActionButtons = () => {
         <div className="action-card">
           <Card
             image={ViewAppointmentImg}
-            title="View appointment you have made"
+            title="View appointment"
             text="View your appointment if you have made one"
             buttonLabel="VIEW APPOINTMENT"
             link="/view-appointment"

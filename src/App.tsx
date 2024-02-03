@@ -11,6 +11,8 @@ import StepperCom from "./components/StepperComp";
 import Confirmation from "./pages/Confirmation";
 import Home from "./pages/Home";
 import AdminHome from "./pages/adminPages/AdminHome";
+import SetAvailability from "./pages/adminPages/SetAvailability";
+import PatientAppointments from "./pages/adminPages/PatientAppointments";
 
 import { Route, Routes, useLocation } from "react-router-dom";
 
@@ -38,6 +40,8 @@ const AppointmentProcess: React.FC = () => {
         <Route path="/confirmation" element={<Confirmation />} />
         <Route path="/admin-home" element={<AdminHome />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/availability" element={<SetAvailability />} />
+        <Route path="/patient-appointments" element={<PatientAppointments />} />
         <Route
           path="/make-appointment"
           element={<MakeAppointment setActiveStep={setActiveStep} />}

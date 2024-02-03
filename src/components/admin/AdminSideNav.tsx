@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
-import "./SideNav.scss";
+import "../SideNav.scss";
 import { Link } from "react-router-dom";
 
-const SideNav: React.FC = () => {
+const AdminSideNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const sideNavRef = useRef<HTMLDivElement>(null);
 
@@ -48,16 +48,16 @@ const SideNav: React.FC = () => {
         {isOpen && (
           <div className="nav-menu">
             <div className="sidenav-links">
-              <Link to="/home">View Appointement</Link>
+              <Link to="/patient-appointments">View Patient Appointements</Link>
             </div>
             <div className="sidenav-links">
-              <Link to="/date-and-time-page">Make Appointement</Link>
+              <Link to="/availability">Set Availability</Link>
             </div>
             <div className="sidenav-links">
-              <Link to="/home">Home</Link>
+              <Link to="/admin-home">Home</Link>
             </div>
             <div className="sidenav-links">
-              <Link to="/">Logout</Link>
+              <Link to="/login-admin">Logout</Link>
             </div>
           </div>
         )}
@@ -66,4 +66,4 @@ const SideNav: React.FC = () => {
   );
 };
 
-export default SideNav;
+export default AdminSideNav;

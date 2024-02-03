@@ -1,0 +1,26 @@
+.main-admin-container {
+  display: flex;
+  justify-content: center;
+  .admin-container {
+    margin-top: 10rem;
+    display: flex;
+    gap: 10rem;
+    color: #fff;
+  }
+}
+
+@media (max-width: 1050px) {
+  .main-admin-container {
+    .admin-container {
+      gap: 5rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .main-admin-container {
+    .admin-container {
+      flex-direction: column;
+    }
+  }
+}
