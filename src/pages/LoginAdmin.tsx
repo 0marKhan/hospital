@@ -33,7 +33,7 @@ const LoginAdmin = () => {
             Forgot your password?
           </a>
           <Link className="login-as-user" to="/">
-            Login as an user
+            Login as a user
           </Link>
         </div>
       </div>

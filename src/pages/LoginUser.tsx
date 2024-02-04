@@ -19,6 +19,9 @@ const LoginUser = () => {
             <img src={HealReserve} />
           </div>
           <div className="input-box">
+            <TextInput label="Email" width="16rem" />
+          </div>
+          <div className="input-box">
             <TextInput label="Username" width="16rem" />
           </div>
           <div className="input-box">

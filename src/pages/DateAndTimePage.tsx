@@ -33,7 +33,11 @@ const DateAndTimePage: React.FC = () => {
           Select a date and time, then press NEXT to proceed
         </h3>
         <div className="next-buttons">
-          <Button variant="contained" onClick={handleNextClick}>
+          <Button
+            variant="contained"
+            onClick={handleNextClick}
+            style={{ backgroundColor: "#1976d2", color: "#fff" }}
+          >
             NEXT
           </Button>
         </div>

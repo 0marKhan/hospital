@@ -26,7 +26,7 @@ const AdminNavbar = () => {
           </Link>
         </li>
         <li className="nav-items">
-          <Link to="/admin-home" className="nav-link">
+          <Link to="/login-admin" className="nav-link">
             Logout
           </Link>
         </li>

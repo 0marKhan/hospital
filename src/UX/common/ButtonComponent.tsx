@@ -11,7 +11,11 @@ const ButtonComponent: React.FC<ButtonComponentProps> = ({
   width,
 }) => {
   return (
-    <MuiButton variant="contained" sx={{ width }}>
+    <MuiButton
+      variant="contained"
+      sx={{ width }}
+      style={{ backgroundColor: "#1976d2", color: "#fff" }}
+    >
       {children}
     </MuiButton>
   );
