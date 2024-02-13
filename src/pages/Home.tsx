@@ -8,6 +8,7 @@ import { MdOutlinePayment } from "react-icons/md";
 import About from "../sections/About";
 
 import northwest from "../assets/northwest.jpg";
+import Logo from "../assets/healreserve.png";
 import "./Home.scss";
 import Footer from "../sections/Footer";
 import ActionButtons from "../sections/ActionButtons";
@@ -17,7 +18,12 @@ const Home = () => {
     <>
       <Navbar />
       <div className="banner" style={{ backgroundImage: `url(${northwest})` }}>
-        {" "}
+        <div className="overlay">
+          <img src={Logo} alt="Logo" className="logo-home" />
+          <h1 className="overlay-text">
+            A healthier tomorrow starts with booking today
+          </h1>
+        </div>
       </div>
       <div className="page-body">
         <h1 className="make-appointment-text">Make an appointment today!</h1>

@@ -21,7 +21,7 @@ const SetAvailability = () => {
       </div>
       <div className="bottom-portion">
         <h3 className="proceed-info">
-          Select a date and time, then press NEXT to proceed
+          Select a date and time, then click on set as available
         </h3>
         <div className="next-buttons">
           <Button
