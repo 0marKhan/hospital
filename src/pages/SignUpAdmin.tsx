@@ -1,13 +1,13 @@
 import React from "react";
 import "./Login.scss";
 import { Link } from "react-router-dom";
+import HealReserve from "../assets/healreserve.png";
 
 import LoginImage from "../assets/login-image.jpeg";
 import TextInput from "../UX/common/TextInput";
 import ButtonComponent from "../UX/common/ButtonComponent";
-import HealReserve from "../assets/healreserve.png";
 
-const LoginUser = () => {
+const SignUpAdmin = () => {
   return (
     <div className="login-container">
       <div className="left-side">
@@ -19,25 +19,20 @@ const LoginUser = () => {
             <img src={HealReserve} />
           </div>
           <div className="input-box">
-            <TextInput label="User Email" width="16rem" />
+            <TextInput label="Username" width="16rem" />
+          </div>
+          <div className="input-box">
+            <TextInput label="Username" width="16rem" />
           </div>
           <div className="input-box">
             <TextInput label="Password" width="16rem" />
           </div>
           <div className="login-btn">
-            <Link to="/home">
-              <ButtonComponent width="16rem">LOG IN</ButtonComponent>
-            </Link>
+            <ButtonComponent width="16rem">SIGN UP</ButtonComponent>
           </div>
-          <a href="https://www.google.com/" className="forgot-password">
-            Forgot your password?
-          </a>
-          <div className="sign-up-link-line">
-            Don't have an account?
-            <Link className="sign-up" to="sign-up">
-              Sign up
-            </Link>
-          </div>
+          <Link className="login-as-user" to="/">
+            Login as an user
+          </Link>
           <Link className="login-as-admin" to="/login-admin">
             Login as an admin
           </Link>
@@ -47,4 +42,4 @@ const LoginUser = () => {
   );
 };
 
-export default LoginUser;
+export default SignUpAdmin;

@@ -19,7 +19,7 @@ const LoginAdmin = () => {
             <img src={HealReserve} />
           </div>
           <div className="input-box">
-            <TextInput label="Username" width="16rem" />
+            <TextInput label="Admin Email" width="16rem" />
           </div>
           <div className="input-box">
             <TextInput label="Password" width="16rem" />
@@ -32,6 +32,12 @@ const LoginAdmin = () => {
           <a href="https://www.google.com/" className="forgot-password">
             Forgot your password?
           </a>
+          <div className="sign-up-link-line">
+            Don't have an account?
+            <Link className="sign-up" to="/sign-up-admin">
+              Sign up
+            </Link>
+          </div>
           <Link className="login-as-user" to="/">
             Login as a user
           </Link>

@@ -22,6 +22,9 @@ const SignUp = () => {
             <TextInput label="Username" width="16rem" />
           </div>
           <div className="input-box">
+            <TextInput label="Username" width="16rem" />
+          </div>
+          <div className="input-box">
             <TextInput label="Password" width="16rem" />
           </div>
           <div className="login-btn">

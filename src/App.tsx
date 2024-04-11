@@ -13,6 +13,7 @@ import Home from "./pages/Home";
 import AdminHome from "./pages/adminPages/AdminHome";
 import SetAvailability from "./pages/adminPages/SetAvailability";
 import PatientAppointments from "./pages/adminPages/PatientAppointments";
+import SignUpAdmin from "./pages/SignUpAdmin";
 
 import { Route, Routes, useLocation } from "react-router-dom";
 
@@ -36,6 +37,7 @@ const AppointmentProcess: React.FC = () => {
         <Route path="/" element={<LoginUser />} />
         <Route path="/login-admin" element={<LoginAdmin />} />
         <Route path="/sign-up" element={<SignUp />} />
+        <Route path="/sign-up-admin" element={<SignUpAdmin />} />
         <Route path="/date-and-time-page" element={<DateAndTimePage />} />
         <Route path="/confirmation" element={<Confirmation />} />
         <Route path="/admin-home" element={<AdminHome />} />
